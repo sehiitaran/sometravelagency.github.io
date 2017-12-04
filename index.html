@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="swiper.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Головна</title>
+</head>
+<body>
+	<header class="header">
+
+		<div class="header-logo">
+			<a href="index.html">Logo</a>
+		</div>
+
+		<button class="main-nav-toggle main-nav-toggle-close" type="button">
+			Меню
+		</button>	
+
+		<nav class="main-nav">
+			<ul class="main-nav-social-list">
+					<i>Ми в соціальних мережах</i>
+				<li class="main-nav-social-item"><a href="#">Facebook</a></li>
+				<li class="main-nav-social-item"><a href="#">Istagram</a></li>
+				<li class="main-nav-social-item"><a href="#">Telegram</a></li>
+				<li class="main-nav-social-item"><a href="#">Twitter</a></li>
+			</ul>
+			<ul class="main-nav-list">
+		
+				<li class="main-nav-item">Тури</li>
+					<ul class="main-nav-sub">
+						<li><a href="#">Розробка туру</a></li>
+						<li><a href="#">Групoві тури</a></li>
+						<li><a href="#">Готові маршрути</a></li>
+					</ul>
+				
+				<li class="main-nav-item">Бронювання</li>
+					<ul class="main-nav-sub">
+						<li><a href="#">Авіа</a></li>
+						<li><a href="#">Готелі</a></li>
+					</ul>
+				<li class="main-nav-item">Travel-журнал</li>
+					<ul class="main-nav-sub">
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Гід</a></li>
+					</ul>
+			</ul>
+		</nav>	
+	</header>
+	<main class="main">
+		<header class="main-header">
+			<i>Туристичне агенство</i>
+			<h2>Maximum Travel</h2>
+			<p>Все необхідне для незабутнього відпочинку!</p>
+			<div class="scroll-down">
+        		<a href="index.html#services">
+      			<div class="scroll-down-icon">
+      		</div>
+        </a>
+      </div>
+		</header>
+
+		<section class="services" id="services"></section>
+	</main>
+	<div class="modal-overlay"></div>
+	
+	
+	<script src="assets/js/header-scroll.js"></script>
+	<script src="assets/js/sub-menu-drop-down.js"></script>
+	<script src="assets/js/menu-open.js"></script>
+
+	<script src="assets/js/lib/smooth-scroll.min.js"></script>
+	<script>
+     var scroll = new SmoothScroll('a[href*="#"]', {
+  // Selectors
+  ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+  header: '.header', // Selector for fixed headers (must be a valid CSS selector)
+
+  // Speed & Easing
+  speed: 700, // Integer. How fast to complete the scroll in milliseconds
+  offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+  easing: 'easeInOutCubic', // Easing pattern to use
+  customEasing: function (time) {}, // Function. Custom easing pattern
+
+
+});
+  </script>
+</body>
+</html>
